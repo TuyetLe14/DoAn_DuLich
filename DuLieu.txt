@@ -1,0 +1,4 @@
+KH001;USA;Trần Ánh Nguyệt;false;Arizona, USA;012345;NguyenThiKieuOanh.jpg
+KH002;TQ;Trần Lê Dương;true;Wuhan;0123456;TranLeDuong.jpg
+KH003;AQ;Phạm Thị Dương;false;LuanDon;0123;PhamThiDuong.jpg
+KH004;JA;Nguyễn Thị Nhỏ;false;Tokyo;01234;NguyenThiTho.jpg

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A725744-1608-4289-AC0C-6F9AD6B4701C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DoAn_DuLich_LTC085A0003_LTC085A0004</RootNamespace>
+    <AssemblyName>DoAn_DuLich_LTC085A0003+LTC085A0004</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsDuLieu.cs" />
+    <Compile Include="clsKhachHang.cs" />
+    <Compile Include="clsXuLy.cs" />
+    <Compile Include="FormDSDiaDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDSDiaDiem.Designer.cs">
+      <DependentUpon>FormDSDiaDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGioiThieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGioiThieu.Designer.cs">
+      <DependentUpon>FormGioiThieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHotels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHotels.Designer.cs">
+      <DependentUpon>FormHotels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhuongTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhuongTien.Designer.cs">
+      <DependentUpon>FormPhuongTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyHanhKhach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyHanhKhach.Designer.cs">
+      <DependentUpon>FormQuanLyHanhKhach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDSDiaDiem.resx">
+      <DependentUpon>FormDSDiaDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGioiThieu.resx">
+      <DependentUpon>FormGioiThieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHotels.resx">
+      <DependentUpon>FormHotels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhuongTien.resx">
+      <DependentUpon>FormPhuongTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyHanhKhach.resx">
+      <DependentUpon>FormQuanLyHanhKhach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\Anh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\Binh dinh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\BRVT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\DaLat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\DaNang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\DuBai.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\HanQuoc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\Italia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\maldives.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\My.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\Nga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\NhatBan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\Phap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\Philippines.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\QuangBinh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\QuangNam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\ThaiLan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\TrungQuoc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HinhDL\VinhHaLong.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
